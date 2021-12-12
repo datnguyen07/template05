@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <title>MARCHO - eCommerce Business PSD Template</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="assets/scripts/jquery.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-ui.custom.min.js"></script>
+
+    <script type="text/javascript" src="assets/scripts/shCore.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="assets/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/blueprint-css/shCoreDefault.css" />
+
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                // Cache selectors
+                var lastId,
+                    topMenu = $(".menu .alpha"),
+                    topMenuHeight = topMenu.outerHeight() + 15,
+                    // All list items
+                    menuItems = topMenu.find("a"),
+                    canUpdateURL = typeof history.pushState === "function" ? true : false,
+                    // Anchors corresponding to menu items
+                    scrollItems = menuItems.map(function () {
+                        var item = $($(this).attr("href"));
+                        if (item.length) {
+                            return item;
+                        }
+                    });
+
+                // Bind click handler to menu items
+                // so we can get a fancy scroll animation
+                menuItems.click(function (e) {
+                    var href = $(this).attr("href"),
+                        offsetTop = $(href).offset().top - topMenuHeight + 1;
+
+                    $('html, body').stop().animate({
+                        scrollTop: offsetTop
+                    }, 300);
+                    e.preventDefault();
+                });
+
+                // Bind to scroll
+                $(window).scroll(function () {
+                    // Get container scroll position
+                    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+                    // Get id of current scroll item
+                    var cur = scrollItems.map(function () {
+                        if ($(this).offset().top < fromTop)
+                            return this;
+                    });
+                    // Get the id of the current element
+                    cur = cur[cur.length - 1];
+                    var id = cur && cur.length ? cur[0].id : "";
+
+                    if (lastId !== id) {
+                        lastId = id;
+                        // Set/remove active class
+                        menuItems
+                            .parents('li').removeClass("active").end()
+                            .filter("[href=#" + id + "]").parent('li').addClass("active")
+                            .parents('li').addClass('active');
+
+                        if (canUpdateURL) {
+                            history.pushState(null, null, window.location.href.split('#').shift() + '#' + id);
+                        } else {
+                            var $section = $('#' + id);
+
+                            $section.attr('id', '');
+                            window.location.hash = '#' + id;
+                            $section.attr('id', id);
+                        }
+                    }
+                });
+
+                hashname = window.location.hash.replace('#', '');
+
+                $('.menu li').removeClass('active');
+                $('.menu li a[href=#' + hashname + ']')
+                    .parent('li').addClass('active')
+                    .parents('li').addClass('active');
+
+                elem = $('#' + hashname);
+
+                if (hashname.length > 1) {
+                    $('body, html').animate({
+                        scrollTop: $(elem).offset().top - topMenuHeight - 315
+                    }, 500, 'easeInOutCubic');
+                };
+            })
+        })(jQuery);
+    </script>
+</head>
+
+
+<body>
+    <div class="docs-header-bg">
+        <div class="docs-header">
+
+            <div class="logo">
+                <span style="font-size:30px;text-transform:uppercase;color: #fe3e57;">MAR</span>
+                <span style="font-size:30px;text-transform:uppercase;color: #ffffff;">CHO</span>
+            </div>
+
+            <h2 class="center">MARCHO - eCommerce PSD Template</h2>
+
+            <p>
+                                Created:  09 February 2020 <br>
+                                By: <a href="https://themeforest.net/user/codeastrology/portfolio">Code Astrology</a><br>
+                                Email: <a href="Email:codeastrology@gmail.com">codeastrology@gmail.com</a><br>
+                                <br>
+                                Thank you for buying this template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here or you can contact with the email provided. Thanks so much.
+                            </p>
+           
+
+        </div>
+    </div>
+    <div class="container">
+
+        <!--      Section       -->
+
+        <!-- 		<h2 id="toc" class="alt">Table of Contents</h2> -->
+
+        <div class="menu">
+            <ol class="alpha">
+                <li><a href="#information">Intro</a>
+                <li><a href="#folder-struc">Folder Structure</a></li>
+                <li><a href="#how-to">How To?</a></li>
+                <li><a href="#credits">Credits</a>
+                </li>
+            </ol>
+        </div>
+
+
+        <h3 id="information"><strong>Intro</strong> - <a href="#information">Top</a></h3>
+
+		<p>MARCHO -eCommerce PSD Template is the trendy design for Businnes 2020.
+           You can customize it very easy to fit your business needs. Adobe Photoshop Compatibility.
+           The design is very elegant and modern, and also very easy to customize with 1170px grid and can be easily conversion into responsive HTML, Wordpress, Magento, Woocommerce, Opencart, Shopify, Drupal, Joomla and other systems.
+           You can use this template to sell Fasion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods etc. 20 PSD files included.
+           Please check the screenshots & descriptions to understand the layout and designs style. We really hope you will like our item.
+        </p>
+
+
+
+        <hr>
+
+        <div class="subitems">
+
+            <h3 id="folder-struc"><strong>PSD Folder Structure</strong> - <a href="#information">top</a></h3>
+			<p>All the file are well organized, its so easy to work with the template.
+			   <br>
+               1. Unzip the files.<br>
+               2. Open "Marcho" folder.</p>
+            <ul class="folder-struc">
+                <li class="file folder">Documentation</li>
+				<ul class="margin-left">
+					<li class="file folder">assets</li>
+					<li class="file page">index</li>
+				</ul>
+                <li class="file folder">PSD</li>
+            </ul>
+            <ul class="folder-struc margin-left">
+				<li class="file page">01_Homepage</li>			
+				<li class="file page">02_Homepage</li>			
+				<li class="file page">03_shop_grid_3_column</li>			
+				<li class="file page">04_shop_grid_with_left_sidebar</li>			
+				<li class="file page">05_shop_grid_with_right_sidebar</li>			
+				<li class="file page">06_shop_list_with_right_sidebar</li>			
+				<li class="file page">07_shop_list_with_left_sidebar</li>			
+				<li class="file page">08_shop_grid_4_column</li>			
+				<li class="file page">09_shop_details</li>			
+				<li class="file page">10_blog_grid_layout</li>
+				<li class="file page">11_blog_standard_right_sidebar</li>
+				<li class="file page">12_blog_standard_left_sidebar</li>
+				<li class="file page">13_blog_list</li>
+				<li class="file page">14_blog_details</li>
+				<li class="file page">15_cart_page</li>
+				<li class="file page">16_checkout_page</li>
+				<li class="file page">17_login_page</li>
+				<li class="file page">18_register_page</li>
+				<li class="file page">19_contact_us_page</li>
+				<li class="file page">20_404_error_page</li>
+				
+             </ul>
+
+            <hr>
+
+            <!--      Section       -->
+
+            <h3 id="how-to"><strong>How To?</strong> - <a href="#information">top</a></h3>
+
+            <h6 id="#move">How to Select layers in PSD?</h6>
+            <p>You can use Move Tool (V) for fast layer selection. Click a layer in the Layers panel. To select multiple contiguous layers, click the first layer and then Shift-click the last layer. To select multiple noncontiguous layers, Ctrl-click (Windows) or Command-click (Mac OS) them in the Layers panel. For select layer you must choose the option from option bar layer. Otherwise it's select the whole group.</p>
+            <img src="assets/images/move_tool.png" />
+            <br /><br />
+
+            <h6 id="#sectionpsd">How to edit each section in PSD?</h6>
+            <p>Every section are separated with Different folder & different color marks. You can select any folder & then specific layer select for customize this layer under the group.</p>
+            <img src="assets/images/folder_Structure.png" />
+            <br /><br />
+
+            <h6 id="#editimage">How to change images in PSD?</h6>
+            <p>Place the image in image placeholder layer with clipping mask.
+			<br>
+			  1. Select the Smart Object layer in the Layers panel.<br>
+              2. Choose Layer→Smart Objects→Replace Contents.<br>
+              3. In the Place dialog box, locate your new file and click the Place button.<br>
+              4. Click OK if you're presented with a dialog box, and the new contents pop into place, replacing the old contents.</p>
+            <img src="assets/images/image_change.png" />
+            <br /><br />
+			
+			<h6 id="#editimage">How to change shape color in PSD?</h6>
+            <p>click on the fill (or stroke) color in shape properties tab, the swatches panel comes out.
+			<br>
+			1. Click on color picker<br>
+			2. Choose any color which you want<br>
+			3. select with color picker or make free color from swatch
+			</p>
+            <img src="assets/images/change_shape_color.png" />
+            <br /><br />
+
+            <h6 id="#edittext">How to edit text in PSD?</h6>
+            <p>Select the text layer and change the text.
+			<br>
+			  1. Open the Photoshop document with the text you want to edit.<br>
+			  2. Select the Type tool in the toolbar.<br>
+			  3. Select the text you want to edit.<br>
+              4. The options bar in the top has options to edit your font type, font size, font color, text alignment, and text style.<br>
+              5. Finally, click in the options bar to save your edits.
+			</p>
+            <img src="assets/images/edit_text.png" />
+            <br /><br />
+
+            <hr>
+
+            <!-- Credits -->
+            <h3 id="credits"><strong>Sources and Credits</strong> - <a href="#information">top</a></h3>
+
+           <div class="narrow-p">
+
+                <p><strong>Image Source:</strong></p>
+
+        <ul>
+			<li><a href="https://unsplash.com/" target="_blank"> Unsplash</a></li>
+			<li><a href="https://www.freepik.com/" target="_blank"> Freepik</a></li>
+        </ul>
+		
+		
+		<hr class="space">
+		
+		<p><strong>Free Fonts:</strong></p>
+
+        <ul>
+			<li><a href="https://fonts.google.com/specimen/Quicksand" target="_blank"> Quicksand </a> (Text)</li>
+			<li><a href="https://fonts.google.com/specimen/Roboto" target="_blank"> Roboto </a> (Text)</li>
+        </ul>
+		
+		<hr class="space">
+		
+		<p><strong>Free Icons:</strong></p>
+
+        <ul>
+			<li><a href="https://fontawesome.com/cheatsheet" target="_blank">Font Awesome </a> (Icons)</li>
+			<li><a href="https://www.flaticon.com/" target="_blank"> Flat Icon </a> (Icons)</li>
+        </ul>            
+			 
+        <hr class="space">
+
+        <p>All images have been used for demonstration purposes only and are not included in the template.</p>
+
+        <hr class="space">
+
+        <!-- Credits -->
+
+        <p><strong>Support:</strong>
+		<br>
+		<p>We are always happy to help you. Please, contact us if you need any help regarding the item. If you have a moment, please rate this item, I’ll appreciate it very much!….Thank you.</p></p>
+
+        <hr class="space">
+
+        </div>
+
+
+    </div>
+    <!-- end div .container -->
+
+</body>
+
+</html>
