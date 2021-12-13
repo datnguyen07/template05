@@ -200,3 +200,39 @@ ul{
     margin-left: 20px;
     padding-bottom: 20px;
 }
+
+.address img {
+    padding-bottom: 34px;
+    padding-top: 122px;
+}
+.address a img {
+    padding-top: 40px;
+    padding-right: 15px;
+}
+.address p {
+    padding-bottom: 5px;
+}
+.useful p {
+    padding-bottom: 5px;
+}
+.useful h2 {
+    padding-top: 122px;
+    padding-bottom: 29px;
+    font-size: 22px;
+}
+.account h2 {
+    padding-top: 122px;
+    padding-bottom: 29px;
+    font-size: 22px;
+}
+.account p {
+    padding-bottom: 5px;
+}
+.subcribe h2 {
+    padding-top: 122px;
+    padding-bottom: 29px;
+    font-size: 22px;
+}
+footer {
+    background-color: #f6f6f6;
+}
