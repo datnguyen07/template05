@@ -177,3 +177,26 @@ ul{
     border: 1px solid red;
 }
 
+
+
+.from-bottom{
+    margin: 120px 0px;
+}
+#smart-obj{
+    width: 55px;
+}
+#smart-obj1{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.item-product1{
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.item-content{
+    text-align: left;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
