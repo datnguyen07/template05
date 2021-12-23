@@ -1,0 +1,232 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   }
+a{
+    text-decoration: none;
+    color: #29282d;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+.col-2{
+    padding: 0;
+}
+.col-2 img{
+    width: 70%;
+}
+.row{
+    display: flex;
+}
+.main-menu{
+    padding: 0;
+    display: flex;
+}
+.main-menu li a{
+    /* padding: 0 15px; */
+    line-height: 45px;
+    transition: transform 0.5s;
+}
+.main-menu li a:hover{
+    font-weight: bold;
+    color: #fe3e57;
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+.menu-text{
+    padding: 0 32px;
+}
+.menu-img img{
+    padding: 0 10px;
+}
+.menu-img img {
+    width: 100%;
+}
+
+.banner{
+    width: 1700px;
+    height: 355px;
+    background-color: #ececec;
+    margin-left: -220px;
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay{
+    text-align: center;
+}
+.home a{
+    margin: 5px 7px;
+}
+.home a:hover{
+    color: red;
+}
+/* ... */
+input{
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 7px 20px;
+    margin-bottom: 20px;
+}
+.first-name{
+    display: flex;
+}
+.first{
+    padding-right: 10px;
+}
+.phone{
+    display: flex;
+}
+.phone1{
+    padding-right: 10px;
+}
+.login p a{
+    color: #fe3e57;
+}
+textarea{
+    background-color: #f6f6f6;
+    width: 100%;
+}
+.contact-info{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 120px 0;
+}
+/* ... */
+.man-watch{
+    opacity: 0.6;
+    display: flex;
+    justify-content: space-between;
+}
+.man-apple{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.title-order{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+.product-man{
+    padding: 20px 0;
+}
+.subt{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+.ship{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+.tot{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.your-product{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 120px;
+}
+
+.payment{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+.title-payment{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+.check1{
+    display: flex;
+}
+.check1 input{
+    margin: 0;
+    width: 19px;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.nd{
+    opacity: 0.6;
+}
+.check{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.check2{
+    padding: 20px;
+}
+.payment button{
+    background-color: #fe3e57;
+    color: #fff;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+}
+
+
+
+/* foot */
+footer {
+    background-color: #f6f6f6;
+}
+.address img {
+    padding-bottom: 34px;
+    padding-top: 122px;
+}
+.address a {
+    padding-top: 40px;
+    padding-right: 15px;
+    color: #cdcdcd;
+    font-size: 30px;
+}
+.address a i:hover {
+    color: #fe3e57;
+}
+.address p {
+    opacity: 0.6;
+}
+#text {
+    margin-top: 25px;
+    opacity: 0.6;
+}
+.payment {
+    margin-top: 25px;
+}
+.useful p {
+    opacity: 0.6;
+}
+.useful h2 {
+    padding-top: 122px;
+    padding-bottom: 29px;
+    font-size: 22px;
+}
+.account h2 {
+    padding-top: 122px;
+    padding-bottom: 29px;
+    font-size: 22px;
+}
+.account p {
+    opacity: 0.6;
+}
+.subcribe h2 {
+    padding-top: 122px;
+    padding-bottom: 29px;
+    font-size: 22px;
+}
+.subcribe p{
+    opacity: 0.6;
+}
+.payment a{
+    padding-left: 10px;
+}
