@@ -12,6 +12,16 @@ ul{
     margin: 0;
     list-style: none;
 }
+/* header{
+    position: sticky;
+    top: 0;
+}
+.my-navbar{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    opacity: 2;
+} */
 .col-2{
     padding: 0;
 }
@@ -24,9 +34,10 @@ ul{
 .main-menu{
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 .main-menu li a{
-    /* padding: 0 15px; */
+    padding: 0 15px;
     line-height: 45px;
     transition: transform 0.5s;
 }
@@ -39,18 +50,14 @@ ul{
 .menu-text{
     padding: 0 32px;
 }
-.menu-img img{
-    padding: 0 10px;
-}
-.menu-img img {
-    width: 100%;
-}
 
+
+/* [class*='col']{
+    border: 1px solid red;
+    } */
 .banner{
-    width: 1700px;
     height: 355px;
-    background-color: #ececec;
-    margin-left: -220px;
+    background-image: url(pngtree-women-s-shoes-promotion-season-carnival-simple-white-banner-image_184441.jpg);
 }
 /* banner */
 .banner{
@@ -82,11 +89,12 @@ ul{
     display: flex;
     opacity: 0.6;
 }
+
 .item-content a:hover{
     color: red;
 }
 .item-product{
-    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
 }
 .item-product img{
@@ -130,10 +138,14 @@ main{
     padding: 30px 30px;
     margin: 40px 0;
 }
+.author-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 .author-img img{
     width: 50%;
-    margin-left: 73px;
-    margin-bottom: 30px;
 }
 .name-design{
     text-align: center;
@@ -278,4 +290,10 @@ footer {
 }
 .payment a{
     padding-left: 10px;
+}
+
+@media(max-width: 991px) {
+    #con9{
+        width: 100%;
+    }
 }

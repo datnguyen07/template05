@@ -7,57 +7,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="template05/css/bootstrap.min.css">
 	<link rel="stylesheet" href="template05/css/style11.css">
+    <link rel="stylesheet" href="template05/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="wrap">
         <header>
 			<div class="container">
-				<div class="row">
-					<div class="col-2">
-						<img src="template05/img/icon/logo.png" alt="">
-					</div>
-					<div class="col-8">
-						<nav>
-							<ul class="main-menu justify-content-center">
-								<li><a class="menu-text" href="">HOME</a></li>
-								<li><a class="menu-text" href="">SHOP</a></li>
-								<li><a class="menu-text" href="">PAGE</a></li>
-								<li><a class="menu-text" href="">BLOG</a></li>
-								<li><a class="menu-text" href="">CONTACT</a></li>
-							</ul>
-						</nav>
-					</div>
-                    <div class="col-2">
-						<nav>
-							<ul class="main-menu">
-								<li><a class="menu-img" href=""><img src="template05/img/icon/user.png" alt=""></a></li>
-								<li><a class="menu-img" href=""><img src="template05/img/icon/search.png" alt=""></a></li>
-								<li><a class="menu-img" href=""><img src="template05/img/icon/heart_icon.png" alt=""></a></li>
-								<li><a class="menu-img" href=""><img src="template05/img/icon/cart_icon.png" alt=""></a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="banner">
-					<div class="overlay">
-                        <h1>BLOG STANDARD</h1>
-                        <div class="home">
-                            <img src="template05/img/icon/home_icon.png" alt="">
-                            <a href="">Home    >>    <a href="">Blog page</a></a>
+                <div class="my-navbar">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"><img src="template05/img/icon/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">
+                            <div class="col-9" id="con9">
+                                <nav>
+                                    <ul class="main-menu">
+                                        <li><a class="menu-text" href="">HOME</a></li>
+                                        <li><a class="menu-text" href="">SHOP</a></li>
+                                        <li><a class="menu-text" href="">PAGE</a></li>
+                                        <li><a class="menu-text" href="">BLOG</a></li>
+                                        <li><a class="menu-text" href="">CONTACT</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <nav>
+                                <ul class="main-menu">
+                                    <li><a class="menu-img" href=""><img src="template05/img/icon/user.png" alt=""></a></li>
+                                    <li><a class="menu-img" href=""><img src="template05/img/icon/search.png" alt=""></a></li>
+                                    <li><a class="menu-img" href=""><img src="template05/img/icon/heart_icon.png" alt=""></a></li>
+                                    <li><a class="menu-img" href=""><img src="template05/img/icon/cart_icon.png" alt=""></a></li>
+                                </ul>
+                            </nav>
                         </div>
-                    </div>
-				</div>
+                    </nav>
+                </div>
+
 			</div>
 		</header>
+        <div class="container-fluid">
+            <div class="banner">
+                <div class="overlay">
+                    <h1 class="wow pulse" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-iteration="10">BLOG STANDARD</h1>
+                    <div class="wow pulse">
+                        <img src="template05/img/icon/home_icon.png" alt="">
+                        <a href="">Home    <a href="">>> </a>   <a href="">Blog page</a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <main>
             <div class="container">
                 <div class="row">
                     <div class="col-8">
                         <div class="bog-content">
                             <div class="row">
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow rollIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_1.jpg" alt="">
 									    <div class="row">
 										    <div class="by-admin">
 											    <div class="col-6 d-flex">
@@ -76,9 +84,9 @@
 									    </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_2.jpg" alt="">
 									<div class="row">
 										<div class="by-admin">
 											<div class="col-6 d-flex">
@@ -99,9 +107,9 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow rollIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_3.jpg" alt="">
 									<div class="row">
 										<div class="by-admin">
 											<div class="col-6 d-flex">
@@ -120,53 +128,9 @@
 									</div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
-									<div class="row">
-										<div class="by-admin">
-											<div class="col-6 d-flex">
-												<img id="smart-obj1" src="template05/img/icon/user.png" alt="">
-												<p>By Admin</p>
-											</div>
-											<div class="col-6 d-flex">
-												<img id="smart-obj1" src="template05/img/icon1/images/Shape 16.png" alt="">
-												<p>10 January 2020</p>
-											</div>
-										</div>
-									</div>
-									<div class="item-content">
-										<h5>Out App User Use Mobile One His Mobile</h5>
-										<a href="">Read More -></a>
-									</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
-									<div class="row">
-										<div class="by-admin">
-											<div class="col-6 d-flex">
-												<img id="smart-obj1" src="template05/img/icon/user.png" alt="">
-												<p>By Admin</p>
-											</div>
-											<div class="col-6 d-flex">
-												<img id="smart-obj1" src="template05/img/icon1/images/Shape 16.png" alt="">
-												<p>10 January 2020</p>
-											</div>
-										</div>
-									</div>
-									<div class="item-content">
-										<h5>Out App User Use Mobile One His Mobile</h5>
-										<a href="">Read More -></a>
-									</div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s"> 
+                                        <img id="img1" src="template05/img/images/clothes_4.jpg" alt="">
 									<div class="row">
 										<div class="by-admin">
 											<div class="col-6 d-flex">
@@ -187,9 +151,9 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow rollIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_5.jpg" alt="">
 									<div class="row">
 										<div class="by-admin">
 											<div class="col-6 d-flex">
@@ -208,9 +172,9 @@
 									</div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_6.jpg" alt="">
 									<div class="row">
 										<div class="by-admin">
 											<div class="col-6 d-flex">
@@ -231,9 +195,9 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow rollIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_1.jpg" alt="">
 									<div class="row">
 										<div class="by-admin">
 											<div class="col-6 d-flex">
@@ -252,9 +216,53 @@
 									</div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="item-product">
-                                        <img id="img1" src="template05/img/icon1/images/anh-xam_03.jpg" alt="">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_2.jpg" alt="">
+									<div class="row">
+										<div class="by-admin">
+											<div class="col-6 d-flex">
+												<img id="smart-obj1" src="template05/img/icon/user.png" alt="">
+												<p>By Admin</p>
+											</div>
+											<div class="col-6 d-flex">
+												<img id="smart-obj1" src="template05/img/icon1/images/Shape 16.png" alt="">
+												<p>10 January 2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>Out App User Use Mobile One His Mobile</h5>
+										<a href="">Read More -></a>
+									</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="item-product wow rollIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_3.jpg" alt="">
+									<div class="row">
+										<div class="by-admin">
+											<div class="col-6 d-flex">
+												<img id="smart-obj1" src="template05/img/icon/user.png" alt="">
+												<p>By Admin</p>
+											</div>
+											<div class="col-6 d-flex">
+												<img id="smart-obj1" src="template05/img/icon1/images/Shape 16.png" alt="">
+												<p>10 January 2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>Out App User Use Mobile One His Mobile</h5>
+										<a href="">Read More -></a>
+									</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="item-product wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+                                        <img id="img1" src="template05/img/images/clothes_4.jpg" alt="">
 									<div class="row">
 										<div class="by-admin">
 											<div class="col-6 d-flex">
@@ -489,5 +497,9 @@
 
     <script src="template05/js/bootstrap.bundle.min.js"></script>
 	<script src="template05/js/jquery-3.6.0.min.js"></script>
+    <script src="template05/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
